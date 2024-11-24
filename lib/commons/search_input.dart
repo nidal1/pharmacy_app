@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class SearchInput extends StatelessWidget {
-  const SearchInput({
+  SearchInput({
     super.key,
     required this.showButton,
+    this.actionButtonText = "Action",
   });
 
   final bool showButton;
+  final String? actionButtonText;
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +25,7 @@ class SearchInput extends StatelessWidget {
               onPressed: () {
                 // Add your button action here
               },
-              child: const Text('Action'),
+              child: Text(actionButtonText!),
             ),
           ],
         ],

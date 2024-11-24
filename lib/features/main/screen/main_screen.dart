@@ -4,6 +4,7 @@ import 'package:pharmacy_app/features/account/screen/account_screen.dart';
 import 'package:pharmacy_app/features/home/component/home_drawer.dart';
 import 'package:pharmacy_app/features/home/component/bottom_navigation.dart';
 import 'package:pharmacy_app/features/home/screen/home_screen.dart';
+import 'package:pharmacy_app/features/search/screen/search_screen.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -33,7 +34,8 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       appBar: const MainAppBar(),
       drawer: const HomeDrawer(),
-      body: pages[selectedIndex],
+      // body: pages[selectedIndex],
+      body: const SearchScreen(),
       bottomNavigationBar: BottomNavigation(
         selectedIndex: selectedIndex,
         updateSelectedIndex: updateSelectedIndex,

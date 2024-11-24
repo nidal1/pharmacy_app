@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pharmacy_app/commons/fonts/my_flutter_app_icons.dart';
 import 'package:pharmacy_app/commons/text_title_large.dart';
-import 'package:pharmacy_app/features/account/components/account_profile_details.dart';
+import 'package:pharmacy_app/commons/account_profile_details.dart';
 import 'package:pharmacy_app/features/account/components/profile_saved_item.dart';
 
 class AccountScreen extends StatelessWidget {
